@@ -1,5 +1,5 @@
 # customized PS1 prompt to indicate we are in a container
-PS1="\W \e[01;31m$\e[m "
+PS1="(aos) \W \e[01;31m$\e[m "
 
 # If not running interactively, don't do anything
 case $- in

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.4/.schema/devbox.schema.json",
+  "packages": [
+      "python@latest",
+      "clang_14@latest",
+      "gdb@latest",
+      "qemu@latest",
+      "lld_14@latest"
+  ],
+  "shell": {
+      "init_hook": [
+      "export PS1='(aos) \\W \\e[01;31m$\\e[m '"
+      ]
+  }
+}
