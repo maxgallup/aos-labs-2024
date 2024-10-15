@@ -348,6 +348,22 @@ run-%-nox: prep-% pre-qemu
 run-%: prep-% pre-qemu
 	$(QEMU) $(QEMUOPTS)
 
+
+
+
+
+docker:
+	@.devcontainer/docker.sh image-build
+	@.devcontainer/docker.sh container-start
+	
+docker-stop:
+	@.devcontainer/docker.sh container-stop
+
+docker-clean: 
+	@.devcontainer/docker.sh clean
+
+
+
 # This magic automatically generates makefile dependencies
 # for header files included from C source files we compile,
 # and keeps those dependencies up-to-date every time we recompile.
