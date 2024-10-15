@@ -9,14 +9,17 @@
         "vscode": {
             "extensions": [
                 "streetsidesoftware.code-spell-checker",
+                "ms-vscode.cpptools",
             ]
         }
     },
     "capAdd": ["SYS_PTRACE"],
     "securityOpt": [ "seccomp=unconfined" ],
 
-    // If you need more ports forwarded, add them here
-    "forwardPorts": [
-    ],
+    // If you need more ports forwarded, add them here.
+    "forwardPorts": [],
 
+    // Optionally, uncomment this for the container to use
+    // the network interface of the host (typically not necessary).
+    // "runArgs": [ "--network=host" ],
 }
